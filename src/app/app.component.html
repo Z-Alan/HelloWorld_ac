@@ -9,7 +9,7 @@
   <!--count = 0 为parent-child子组件定义的值-->
   <!--第一种@Input定义<app-parent-child [count]="initialCount"></app-parent-child>-->
   <app-parent-child [count]="initialCount"
-                    (change)="countChange($event)">
+                    (countChange)="countChange($event)">
   </app-parent-child>
 </div>
 
