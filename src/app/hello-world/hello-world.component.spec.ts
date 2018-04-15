@@ -2,6 +2,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HelloWorldComponent } from './hello-world.component';
 
+/**
+ * .spec.ts 自动化测试
+ * */
 describe('HelloWorldComponent', () => {
   let component: HelloWorldComponent;
   let fixture: ComponentFixture<HelloWorldComponent>;
