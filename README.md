@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Component介绍
+1. hello-world 组件
+认识angular cli 与angular 4.x,在app.component中添加hello world 可运行一个hello-world组件
+2. parent-child 父向子组件通信
+功能:掌握如何父组件->子组件通信 @Input
