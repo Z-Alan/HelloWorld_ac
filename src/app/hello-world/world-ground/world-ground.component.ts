@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component,Input, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-world-ground',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorldGroundComponent implements OnInit {
 
+  @Input() editable: boolean;
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    console.log("world ground oninit ..."+this.editable);
   }
 
 }
