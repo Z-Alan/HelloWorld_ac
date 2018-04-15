@@ -1,8 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParenChildComponent } from './paren-child.component';
+import {ParentChildComponent} from './parent-child.component';
 
-describe('ParenChildComponent', () => {
+describe('ParentChildComponent', () => {
   let component: ParenChildComponent;
   let fixture: ComponentFixture<ParenChildComponent>;
 
@@ -14,7 +14,7 @@ describe('ParenChildComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ParenChildComponent);
+    fixture = TestBed.createComponent(ParentChildComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
