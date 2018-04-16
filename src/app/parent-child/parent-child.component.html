@@ -4,3 +4,7 @@
 <p>parent-child组件显示的值:{{count}}</p>
 <button (click)="increment()" >+</button>
 <button (click)="decrement()" >-</button>
+<div *ngIf="false">this is a boolean expession of false</div> <!-- never displayed -->
+<div *ngIf="1 > 0">this is a expression of 1 > 0</div> <!-- displayed if a is more than b -->
+<div *ngIf="'yes' == 'yes'">this is a compared with str of expression</div> <!-- displayed if str holds the string "yes" -->
+<div *ngIf="myFunc()">this is function with expression </div> <!-- displayed if myFunc returns a true value -->

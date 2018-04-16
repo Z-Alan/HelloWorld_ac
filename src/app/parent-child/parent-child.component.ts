@@ -14,6 +14,13 @@ export class ParentChildComponent implements OnInit {
   @Input() count = 0;
   @Output() countChange: EventEmitter<number> = new EventEmitter<number>();
 
+
+  constructor() { }
+
+  ngOnInit() {
+    console.log("parent-child init ...");
+  }
+
   increment() {
     this.count++;
     this.countChange.emit(this.count);
@@ -24,9 +31,7 @@ export class ParentChildComponent implements OnInit {
     this.countChange.emit(this.count);
   }
 
-  constructor() { }
-
-  ngOnInit() {
+  myFunc(){
+    return true;
   }
-
 }

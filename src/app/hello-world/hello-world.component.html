@@ -3,27 +3,16 @@
     <ng-template #nzTabHeading>
       world-sky
     </ng-template>
-    <app-world-sky [editable]="editable"></app-world-sky>
+    <app-world-sky></app-world-sky>
   </nz-tab>
   <nz-tab>
     <ng-template #nzTabHeading>
       world-ground
     </ng-template>
-    <app-world-ground [editable]="editable"></app-world-ground>
+    <app-world-ground></app-world-ground>
   </nz-tab>
   <ng-template #tabBarExtraContent>
-    <nz-button-group>
-      <button nz-button [nzType]="'primary'" (click)="showSaveModal();" [disabled]="editable">发布问卷</button>
-      <button nz-button (click)="showCancelSaveModal()" [disabled]="!editable">取消发布</button>
-    </nz-button-group>
+    <button nz-button [nzType]="'primary'">发布问卷</button>
   </ng-template>
-  <!--发布前的提示-->
-  <ng-template #title>
-    <span>站点提示...</span>
-  </ng-template>
-  <ng-template #content>
-    <div>
-      <p></p>
-    </div>
-  </ng-template>
+
 </nz-tabset>

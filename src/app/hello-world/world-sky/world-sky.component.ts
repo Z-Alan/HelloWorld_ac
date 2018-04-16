@@ -14,7 +14,7 @@ export class WorldSkyComponent implements OnInit {
 
   ngOnInit() {
 
-    console.log(this.editable);
+    console.log("world-sky init....");
   }
 
 

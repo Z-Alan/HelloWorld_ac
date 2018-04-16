@@ -8,12 +8,11 @@ import {Component,Input, OnInit} from '@angular/core';
 })
 export class WorldGroundComponent implements OnInit {
 
-  @Input() editable: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log("world ground oninit ..."+this.editable);
+    console.log("world ground oninit ...");
   }
 
 }
