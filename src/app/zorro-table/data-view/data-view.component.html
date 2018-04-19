@@ -1,0 +1,50 @@
+<nz-table #nzTable [nzDataSource]="_dataSet" [nzPageSize]="10">
+  <!--表头-->
+  <thead nz-thead>
+    <tr>
+      <th nz-th><span>设备号</span></th>
+      <th nz-th><span>姓名</span></th>
+      <th nz-th><span>睡眠得分</span></th>
+      <th nz-th><span>睡眠时长（h）</span></th>
+      <th nz-th><span>入睡时间</span></th>
+      <th nz-th><span>起床时间</span></th>
+      <th nz-th><span>深睡眠所占百分比（%）</span></th>
+      <th nz-th><span>REM百分比（%）</span></th>
+      <th nz-th><span>体动次数</span></th>
+      <th nz-th><span>平均心率</span></th>
+      <th nz-th><span>打鼾时长（h）</span></th>
+      <th nz-th><span>入睡时长（h）</span></th>
+      <th nz-th><span>离枕次数（次）</span></th>
+      <th nz-th><span>剩余电量（%）</span></th>
+      <th nz-th><span>呼吸暂停次数</span></th>
+      <th nz-th><span>操作</span></th>
+    </tr>
+  </thead>
+  <!--数据集-->
+  <tbody nz-tbody>
+    <ng-template  ngFor let-data [ngForOf]="nzTable.data">
+      <tr nz-tbody-tr>
+        <td nz-td>{{data.devCode}}</td>
+        <td nz-td>{{data.realname}}</td>
+        <td nz-td>{{data.sleepScore}}</td>
+        <td nz-td>{{data.sleepDuration}}</td>
+        <td nz-td>{{data.sleepBeginTime}}</td>
+        <td nz-td>{{data.sleepEndTime}}</td>
+        <td nz-td>{{data.deepSleep}}</td>
+        <td nz-td>{{data.REMSleep}}</td>
+        <td nz-td>{{data.movementCount}}</td>
+        <td nz-td>{{data.hr}}</td>
+        <td nz-td>{{data.snoreDuration}}</td>
+        <td nz-td>{{data.enterSleepDuration}}</td>
+        <td nz-td>{{data.qyCount}}</td>
+        <td nz-td>{{data.surplusQ}}</td>
+        <td nz-td>{{data.snore}}</td>
+        <td nz-td><a>查看</a></td>
+      </tr>
+    </ng-template>
+  </tbody>
+  <!--显示当前页面的始末记录,总记录-->
+  <span nz-table-footer>
+    显示第 {{startRow}} 到第 {{endRow}} 条记录，总共 {{_total}} 条记录
+  </span>
+</nz-table>
