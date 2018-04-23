@@ -10,12 +10,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HelloWorldService} from './hello-world/hello-world.service';
-import { ZorroTableComponent } from './zorro-table/zorro-table.component';
-import { ZorroFormComponent } from './zorro-form/zorro-form.component';
-import {DataQueryComponent} from './zorro-table/data-query/data-query.component';
-import { DataViewComponent } from './zorro-table/data-view/data-view.component';
-import {DataService} from './zorro-table/data.service';
-
+import {ZorroFormComponent } from './zorro-form/zorro-form.component';
+import {DataQueryComponent} from './data-query/data-query.component';
+import {DataViewComponent} from './data-query/data-view/data-view.component';
+import { Angular4Form1Component } from './angular4-form1/angular4-form1.component';
 /**
  * declarations 声明组件信息*/
 @NgModule({
@@ -25,10 +23,10 @@ import {DataService} from './zorro-table/data.service';
     ParentChildComponent,
     WorldSkyComponent,
     WorldGroundComponent,
-    ZorroTableComponent,
     ZorroFormComponent,
     DataQueryComponent,
-    DataViewComponent
+    DataViewComponent,
+    Angular4Form1Component
   ],
   imports: [
     BrowserModule,
@@ -40,7 +38,6 @@ import {DataService} from './zorro-table/data.service';
   ],
   providers: [
     {provide: 'HelloWorldService', useClass: HelloWorldService},
-    {provide: 'dataService', useClass: DataService}
     ],
   bootstrap: [AppComponent]
 })

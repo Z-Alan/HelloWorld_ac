@@ -1,0 +1,87 @@
+<div style="width:85%;">
+
+  <nz-card >
+    <ng-template #title>睡眠报表</ng-template>
+    <ng-template #body>
+      <!--查询区域-->
+      <nz-card>
+        <ng-template #title>查询条件</ng-template>
+        <ng-template #body>
+          <form>
+            <div nz-row class="lineSpacing ">
+              <div nz-col [nzSpan]="4">
+                <nz-input nzSize="large">
+                  <ng-template #addOnBefore>设备号</ng-template>
+                </nz-input>
+              </div>
+              <div nz-col [nzSpan]="4">
+                <nz-input nzSize="large">
+                  <ng-template #addOnBefore>得分<</ng-template>
+                </nz-input>
+              </div>
+              <div nz-col [nzSpan]="4">
+                <nz-input nzSize="large">
+                  <ng-template #addOnBefore>体动<</ng-template>
+                </nz-input >
+              </div>
+              <div nz-col [nzSpan]="4">
+                <nz-input nzSize="large">
+                  <ng-template #addOnBefore>心率></ng-template>
+                </nz-input>
+              </div>
+              <div nz-col [nzSpan]="4">
+                <nz-input nzSize="large">
+                  <ng-template #addOnBefore>时长></ng-template>
+                </nz-input>
+              </div>
+              <div nz-col [nzSpan]="4">
+                <nz-input nzSize="large">
+                  <ng-template #addOnBefore>异常次数></ng-template>
+                </nz-input>
+              </div>
+            </div>
+            <div nz-row class="lineSpacing ">
+              <div nz-col [nzSpan]="8">
+                <nz-input-group nzSize="large" [nzCompact]="true">
+                  <nz-radio-group nzSize="large">
+                    <label id="ReceiptDate" nz-radio-button nzDisabled="true">测量时间</label>
+                  </nz-radio-group>
+                  <nz-datepicker nzSize="large" name="beginDate" nzFormat="YYYY-MM-DD"></nz-datepicker>
+                  <input nzSize="large" type="text" placeholder="to" nz-input id="betweenTime">
+                  <nz-datepicker nzSize="large" name="endDate" nzFormat="YYYY-MM-DD" ></nz-datepicker>
+                </nz-input-group>
+              </div>
+              <div nz-col [nzSpan]="4" [nzOffset] = "'4'">
+                <nz-radio-group nzSize="large">
+                  <label>快速查询:</label>
+                </nz-radio-group>
+                <nz-select style="width: 50%;" nzSize="large"
+                           [nzPlaceHolder]="'请选择'">
+                  <nz-option [nzLabel]="'请选择'" [nzValue]="-1"></nz-option>
+                  <nz-option [nzLabel]="'当天'" [nzValue]="0"></nz-option>
+                  <nz-option [nzLabel]="'当月'" [nzValue]="1"></nz-option>
+                  <nz-option [nzLabel]="'近三个月'" [nzValue]="3"></nz-option>
+                </nz-select>
+              </div>
+              <div nz-col [nzSpan]="4"  [nzOffset] = "'4'">
+                <button nz-button [nzType]="'primary'">查询</button>
+              </div>
+            </div>
+
+
+          </form>
+        </ng-template>
+      </nz-card>
+      <!--数据展示-->
+      <nz-card>
+        <ng-template #title>数据列表</ng-template>
+        <ng-template #body>
+          <app-data-view></app-data-view>
+        </ng-template>
+      </nz-card>
+
+    </ng-template>
+  </nz-card>
+
+
+</div>

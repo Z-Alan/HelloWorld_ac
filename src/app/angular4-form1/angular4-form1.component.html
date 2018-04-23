@@ -1,0 +1,11 @@
+<!--表单验证之表单  必 填 校验-->
+<!--通过获取ngModel元素, 来判断该表单控件是否通过验证-->
+
+<form  novalidate #f="ngForm">
+  <input #username = "ngModel" type="text" name = "username"  [(ngModel)]="user.username" required
+         (ngModelChange)="userNameChange($event)">
+</form>
+
+
+{{username.valid}}
+

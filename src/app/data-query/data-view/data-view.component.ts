@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-data-view',
@@ -7,12 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataViewComponent implements OnInit {
   _dataSet = [];
-  // startRow: number;
-  // endRow: number;
-  // _total: number;
   startRow = 1;
   endRow = 10;
-  _total = 1;
+  _total = 120;
   constructor() {
   }
 
@@ -36,8 +33,6 @@ export class DataViewComponent implements OnInit {
         snore: '2'
       });
     }
-    // this.startRow = 1;
-    // this.endRow = 10;
-    // this._total = 1;
   }
+
 }

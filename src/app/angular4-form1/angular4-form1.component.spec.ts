@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ZorroTableComponent } from './zorro-table.component';
+import { Angular4Form1Component } from './angular4-form1.component';
 
-describe('ZorroTableComponent', () => {
-  let component: ZorroTableComponent;
-  let fixture: ComponentFixture<ZorroTableComponent>;
+describe('Angular4Form1Component', () => {
+  let component: Angular4Form1Component;
+  let fixture: ComponentFixture<Angular4Form1Component>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ZorroTableComponent ]
+      declarations: [ Angular4Form1Component ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ZorroTableComponent);
+    fixture = TestBed.createComponent(Angular4Form1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
