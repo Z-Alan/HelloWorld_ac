@@ -14,6 +14,7 @@ import {ZorroFormComponent } from './zorro-form/zorro-form.component';
 import {DataQueryComponent} from './data-query/data-query.component';
 import {DataViewComponent} from './data-query/data-view/data-view.component';
 import { Angular4Form1Component } from './angular4-form1/angular4-form1.component';
+import { ChildComponent } from './parent-child/child/child.component';
 /**
  * declarations 声明组件信息*/
 @NgModule({
@@ -26,7 +27,8 @@ import { Angular4Form1Component } from './angular4-form1/angular4-form1.componen
     ZorroFormComponent,
     DataQueryComponent,
     DataViewComponent,
-    Angular4Form1Component
+    Angular4Form1Component,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
